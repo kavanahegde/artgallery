@@ -1,0 +1,85 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Artwork container */
+.artwork-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Artwork styles */
+.artwork {
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 10px;
+    background-color: #3498db;
+    position: relative;
+}
+
+/* Abstract shapes */
+.shape {
+    position: absolute;
+    opacity: 0.7;
+}
+
+.rectangle {
+    width: 100%;
+    height: 60%;
+    background-color: #e74c3c;
+    z-index: 1;
+}
+
+.circle {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    background-color: #2ecc71;
+    z-index: 2;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #f1c40f;
+    z-index: 3;
+}
+
+/* Form container */
+.form-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form input and button */
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
